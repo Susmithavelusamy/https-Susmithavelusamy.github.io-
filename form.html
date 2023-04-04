@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML FORMS</title>
+</head>
+<body style="background-color:MediumSpringGreen;">
+<center><h1>EVENT REGISTRATION</h1></center>
+<center><h4 style="color:red;">Fill the form to participate in the event!!</h4></center>
+<form method="get" autocomplete="on validate">
+<fieldset>
+<legend>Personal details:</legend>
+  <label for="fname">First name:</label>&nbsp;&nbsp;&nbsp;
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>&nbsp;&nbsp;&nbsp;
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="rno">Rollnumber:</label>
+  <input type="text" id="rno" name="rno"><br><br>
+  <label for="birthday">DOB:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="date" id="birthday" name="birthday"><br><br>
+ <label for="dep">Department:</label>
+<input list="dep" name="dep">
+  <datalist id="dep">
+    <option value="CSE">
+    <option value="IT">
+    <option value="ECE">
+  </datalist><br><br>
+  <label for="em">Email:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="email" id="em" name="em"><br><br>
+  <label for="gender">Gender:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select id="gender" name="gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Others">Others</option>
+  </select>
+  <h3>Code area</h3>
+  <input type="radio" id="c" name="lang">
+  <label for="c">C</label><br>
+  <input type="radio" id="c++" name="lang">
+  <label for="c++">C++</label>
+<h3>Area of interest</h3>
+  <input type="checkbox" id="Coding" name="lang">
+  <label for="Coding">Coding</label><br>
+  <input type="checkbox" id="Developer" name="lang">
+  <label for="Developer">Developer</label><br>
+  <input type="checkbox" id="Tester" name="lang">
+  <label for="Tester">Tester</label><br>
+  <input type="checkbox" id="Maintenance" name="lang">
+  <label for="Maintenance">Maintenance</label><br>
+<h3><b><label for="myfile">Any certifications:</label></b></h3>
+  <input type="file" id="myfile" name="myfile"><br><br>
+<h3>Any suggestions:</h3>
+ <textarea name="message" rows="3" cols="30" ></textarea><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+</fieldset>
+</form>
+</body>
+</html>
